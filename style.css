@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #353537;
+    font-family: 'Inter', sans-serif;
+    font-size: 100%;
+}
+
+#root{
+    width: 2000px;
+    background-color: #23252C;
+    margin: 0 auto;
+}
+
+ /* HEADER STYLES */
+
+.Header--image{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    background-color: white
+}
+
+.Header--heading{
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.Header h1{
+    font-size: 8rem;
+    color: #FFFFFF;
+    margin-top: 80px;
+    font-weight: 600;
+}
+
+.Header h2{
+    font-size: 6rem;
+    color: #F3BF99;
+    font-weight: normal;
+}
+
+.Header h3{
+    font-size: 4.5rem;
+    color: #F5F5F5;
+    margin-bottom: 80px;
+    font-weight: normal;
+}
+
+.Header--buttons{
+    display: flex;
+    justify-content: center;
+    column-gap: 60px;
+}
+
+.Header--button_container{
+    width: 600px;
+    height: 180px;
+    background-color: white;
+    border-radius: 6px;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+}
+
+.Header--button_container-linkedin{
+    background-color: #5093E2;
+    width: 700px;
+}
+
+.Header--button_email{
+    background:url('./icons/email_icon.png') no-repeat left center;
+    text-decoration: none;
+    color: black;
+    padding-left: 130px;
+}   
+
+.Header--button_linkedin{
+    background:url('./icons/linkedin_icon.png') no-repeat left center;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    padding-left: 120px;
+    padding-top: 40px;
+}   
+
+ /* ABOUT STYLES */
+ 
+ .About{
+     margin: 200px;
+ }
+ 
+ .About--title{
+     color: #F5F5F5;
+     margin: 0;
+     font-weight: 600;
+     font-size: 6rem;
+ }
+ 
+ .About--text{
+    color: #DCDCDC;
+    font-size: 5rem;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: left top;
+ }
+ 
+  /* INTERESTS STYLES */
+  
+   .Interests{
+     margin: 200px;
+ }
+ 
+ .Interests--title{
+     color: #F5F5F5;
+     margin: 0;
+     font-weight: 600;
+     font-size: 6rem;
+ }
+ 
+ .Interests--text{
+    color: #DCDCDC;
+    font-size: 5rem;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: left top;
+ }
+ 
+   /* ICONS STYLES */
+
+    .Icons{
+        background-color: #161619;
+        text-align: center;
+    }
+    
+    .Icon{
+        width: 300px;
+        padding: 20px
+    }
+    
+    .Icon--link a{
+        font-size: 4rem;
+        color: white;
+        text-decoration: none;
+    }
