@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 11);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -74,9 +74,9 @@
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(14);
+  module.exports = __webpack_require__(15);
 } else {
-  module.exports = __webpack_require__(13);
+  module.exports = __webpack_require__(14);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -376,9 +376,9 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(18);
+  module.exports = __webpack_require__(19);
 } else {
-  module.exports = __webpack_require__(17);
+  module.exports = __webpack_require__(18);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -403,15 +403,19 @@ var _About = __webpack_require__(6);
 
 var _About2 = _interopRequireDefault(_About);
 
-var _Header = __webpack_require__(7);
+var _Experiences = __webpack_require__(7);
+
+var _Experiences2 = _interopRequireDefault(_Experiences);
+
+var _Header = __webpack_require__(8);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Interests = __webpack_require__(9);
+var _Interests = __webpack_require__(10);
 
 var _Interests2 = _interopRequireDefault(_Interests);
 
-var _Icons = __webpack_require__(8);
+var _Icons = __webpack_require__(9);
 
 var _Icons2 = _interopRequireDefault(_Icons);
 
@@ -423,6 +427,7 @@ function App() {
         { className: "App" },
         _react2.default.createElement(_Header2.default, null),
         _react2.default.createElement(_About2.default, null),
+        _react2.default.createElement(_Experiences2.default, null),
         _react2.default.createElement(_Interests2.default, null),
         _react2.default.createElement(_Icons2.default, null)
     );
@@ -467,9 +472,9 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(12);
+  module.exports = __webpack_require__(13);
 } else {
-  module.exports = __webpack_require__(11);
+  module.exports = __webpack_require__(12);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -504,13 +509,48 @@ function About() {
         _react2.default.createElement(
             "p",
             { className: "About--text" },
-            "lorem loreloremloremloremlorem loremloremlorem loremloremlorem loremvloremloremm"
+            "I became interested in the IT field approximately 5 years ago. I have found that I enjoy this area and would like to further my education in it and I would like to start working as a software tester."
         )
     );
 }
 
 /***/ }),
 /* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = Experiences;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Experiences() {
+    return _react2.default.createElement(
+        "div",
+        { className: "Experiences" },
+        _react2.default.createElement(
+            "h2",
+            { className: "Experiences--title" },
+            "Experiences"
+        ),
+        _react2.default.createElement(
+            "p",
+            { className: "Experiences--text" },
+            "I first started learning to programming in Java. Then I found the Czechitas organization, where I completed several courses in various IT areas, such as manual testing, automation testing, website development and Javascript programming."
+        )
+    );
+}
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -531,21 +571,20 @@ function Header() {
     return _react2.default.createElement(
         "div",
         { className: "Header" },
-        _react2.default.createElement("img", { className: "Header--image", src: "./images/girl.png" }),
+        _react2.default.createElement(
+            "div",
+            { className: "Header--imagecontainer" },
+            _react2.default.createElement("img", { className: "Header--image", src: "./images/me.png", alt: "Photo of me" })
+        ),
         _react2.default.createElement(
             "h1",
             { className: "Header--heading" },
-            "Name Surname"
+            "Lucie Tesa\u0159ov\xE1"
         ),
         _react2.default.createElement(
             "h2",
             { className: "Header--heading" },
-            "Position"
-        ),
-        _react2.default.createElement(
-            "h3",
-            { className: "Header--heading" },
-            "Website"
+            "Brno"
         ),
         _react2.default.createElement(
             "div",
@@ -555,7 +594,7 @@ function Header() {
                 { className: "Header--button_container" },
                 _react2.default.createElement(
                     "a",
-                    { href: "#", className: "Header--button_email" },
+                    { href: "mailto:tesarova.lucie.2021@gmail.com", className: "Header--button_email" },
                     "Email"
                 )
             ),
@@ -564,7 +603,7 @@ function Header() {
                 { className: "Header--button_container Header--button_container-linkedin" },
                 _react2.default.createElement(
                     "a",
-                    { href: "#", className: "Header--button_linkedin" },
+                    { href: "https://www.linkedin.com/in/lucie-tesa%C5%99ov%C3%A1-9996161b2/", className: "Header--button_linkedin" },
                     "LinkedIn"
                 )
             )
@@ -573,7 +612,7 @@ function Header() {
 }
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -597,8 +636,11 @@ function Icons() {
         _react2.default.createElement(
             "div",
             { className: "Icons--images" },
-            _react2.default.createElement("img", { className: "Icon", src: "./icons/fb_icon.png" }),
-            _react2.default.createElement("img", { className: "Icon", src: "./icons/github_icon.png" })
+            _react2.default.createElement(
+                "a",
+                { target: "_blank", href: "https://github.com/LucieTesarova" },
+                _react2.default.createElement("img", { className: "Icon", src: "./icons/github_icon.png" })
+            )
         ),
         _react2.default.createElement(
             "div",
@@ -613,7 +655,7 @@ function Icons() {
 }
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -642,13 +684,13 @@ function Interests() {
         _react2.default.createElement(
             "p",
             { className: "Interests--text" },
-            "Interests lorem loreloremlor Interests InterestsInterestsInterests Interestsemloreml InterestsInterestsorem loremloremlorem loremloremlorem loremvloremloremm"
+            "I'm most interested in manual and automation testing and frontend development. I like to learn new things from courses at Czechitas organisation or from the internet on my own and I like to create my own mini projects."
         )
     );
 }
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -671,7 +713,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById("root"));
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -693,7 +735,7 @@ if (process.env.NODE_ENV !== "production") {
 var React = __webpack_require__(0);
 var _assign = __webpack_require__(2);
 var Scheduler = __webpack_require__(3);
-var tracing = __webpack_require__(19);
+var tracing = __webpack_require__(20);
 
 var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
 
@@ -26941,7 +26983,7 @@ exports.version = ReactVersion;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27245,7 +27287,7 @@ exports.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!rk(c))throw Er
 
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29586,7 +29628,7 @@ exports.version = ReactVersion;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29616,7 +29658,7 @@ exports.useLayoutEffect=function(a,b){return S().useLayoutEffect(a,b)};exports.u
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29971,7 +30013,7 @@ exports.unstable_wrap = unstable_wrap;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29987,7 +30029,7 @@ var b=0;exports.__interactionsRef=null;exports.__subscriberRef=null;exports.unst
 
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30641,7 +30683,7 @@ exports.unstable_wrapCallback = unstable_wrapCallback;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30668,16 +30710,16 @@ exports.unstable_wrapCallback=function(a){var b=P;return function(){var c=P;P=b;
 
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(16);
+  module.exports = __webpack_require__(17);
 } else {
-  module.exports = __webpack_require__(15);
+  module.exports = __webpack_require__(16);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
