@@ -574,7 +574,7 @@ function Header() {
         _react2.default.createElement(
             "div",
             { className: "Header--imagecontainer" },
-            _react2.default.createElement("img", { className: "Header--image", src: "./images/me.png", alt: "Photo of me" })
+            _react2.default.createElement("img", { className: "Header--image", src: "./images/me2.jpg", alt: "Photo of me" })
         ),
         _react2.default.createElement(
             "h1",

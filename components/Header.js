@@ -4,7 +4,7 @@ export default function Header(){
     return(
         <div className="Header">
             <div className="Header--imagecontainer">
-            <img className="Header--image" src="./images/me.png" alt="Photo of me"></img>
+            <img className="Header--image" src="./images/me2.jpg" alt="Photo of me"></img>
             </div>
             <h1 className="Header--heading">Lucie Tesařová</h1>
              <h2 className="Header--heading">Brno</h2>
